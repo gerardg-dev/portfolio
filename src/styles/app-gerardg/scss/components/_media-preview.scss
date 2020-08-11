@@ -1,0 +1,34 @@
+.appgerardg-media-preview {
+  &__container {
+    // border: solid blue 3px;
+    position: absolute;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    &--content {
+      position: relative;
+      // border: solid yellow 3px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__img {
+    // border: solid pink 3px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__iframe {
+    // border: solid red 3px;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

@@ -1,0 +1,178 @@
+.appgerardg-project-details-card {
+  &__container {
+    @include appgerardg-moz-hide-scrollbar;
+    // border: solid white 0.25rem !important;
+    padding: 2rem !important;
+    @include flexColumnCenter;
+    overflow-y: scroll !important;
+    position: relative !important;
+
+    &--text {
+      // border: solid red 0.1rem !important;
+      width: 100%;
+      max-width: 60rem !important;
+    }
+  }
+
+  &__img {
+    &--logo {
+      // border: solid red 0.1rem !important;
+      width: 20rem !important;
+      height: 10rem !important;
+      object-fit: contain;
+
+      animation: appgerardg-fadezoom-in-out 1.25s ease-out 0.5s;
+      animation-fill-mode: backwards;
+      backface-visibility: hidden;
+    }
+    &--img-thumb {
+      // border: solid rgba(255, 255, 255, 0.25) 0.2rem !important;
+      width: 10rem !important;
+      height: 10rem !important;
+      object-fit: contain;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 0.25rem !important;
+
+      &:hover {
+        cursor: pointer;
+
+        transform: scale(1.05);
+        transition: 0.1s;
+      }
+
+      animation: appgerardg-fadezoom-in-out 1s ease-out 0.75s;
+      animation-fill-mode: backwards;
+      backface-visibility: hidden;
+    }
+    &--vid-thumb {
+      // border: solid rgba(255, 255, 255, 0.25) 0.2rem !important;
+      width: 10rem !important;
+      height: 10rem !important;
+      object-fit: contain;
+      background-color: rgba(255, 255, 255, 0.15);
+      margin: 0.25rem !important;
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/app-gerardg.appspot.com/o/default_images%2FPlay-Clear.png?alt=media&token=64ed8e11-152c-477c-8bb0-35af1dab83d9);
+      background-size: cover !important;
+
+      &:hover {
+        background-image: linear-gradient(
+          to bottom right,
+          lighten(rgba(blue, 0.5), 20),
+          rgba(lightgreen, 0.5)
+        );
+        cursor: pointer;
+      }
+
+      animation: appgerardg-fadezoom-in-out 1s ease-out 0.75s;
+      animation-fill-mode: backwards;
+      backface-visibility: hidden;
+    }
+  }
+
+  &__text {
+    &--name {
+      margin-top: 1rem !important;
+      margin-bottom: 2rem !important;
+    }
+    &--about-title {
+      font-weight: bold;
+      margin-top: 2rem !important;
+    }
+    &--parr {
+      // border: solid blue 3px;
+      color: white;
+    }
+
+    &--github {
+      color: black !important;
+    }
+    &--web-prod {
+      color: white !important;
+    }
+    &--web-dev {
+      color: white !important;
+    }
+    &--apple-app-store {
+      color: white;
+    }
+    &--google-play-store {
+      color: white;
+    }
+    &--amazon-app-store {
+      color: white;
+    }
+  }
+
+  &__link {
+    @include flexColumnCenter;
+    width: 25rem !important;
+    margin-top: 0.5rem !important;
+    padding: 1rem !important;
+    color: white;
+    text-align: center;
+    text-decoration: none !important;
+    font-weight: bold;
+
+    &:first-of-type {
+      margin-top: 2rem !important;
+      @include appgerardg-polygon-top-right-cut-2;
+    }
+    &:last-child {
+      @include appgerardg-polygon-bottom-left-cut-1;
+    }
+
+    &:hover {
+      width: 30rem !important;
+      transition: all 0.2s;
+    }
+
+    &--github {
+      background-color: rgba(255, 255, 255, 0.5);
+      background-image: linear-gradient(
+        to bottom right,
+        gray,
+        lighten(gray, 25)
+      );
+    }
+    &--web-prod {
+      background-color: rgba(lightgreen, 0.9);
+      background-image: linear-gradient(
+        to bottom right,
+        darken(lightgreen, 25),
+        lightgreen
+      );
+    }
+    &--web-dev {
+      background-color: rgba(blue, 0.5);
+      background-image: linear-gradient(
+        to bottom right,
+        darken(lightblue, 25),
+        lightblue
+      );
+    }
+    &--apple-app-store {
+      background-color: rgba(255, 255, 255, 0.9);
+      background-image: linear-gradient(
+        to bottom right,
+        blue,
+        lighten(blue, 25)
+      );
+    }
+    &--google-play-store {
+      background-color: rgba(green, 0.9);
+      background-image: linear-gradient(
+        to bottom right,
+        green,
+        lighten(green, 25)
+      );
+    }
+    &--amazon-app-store {
+      background-color: rgba(orange, 0.9);
+      background-image: linear-gradient(
+        to bottom right,
+        orange,
+        lighten(orange, 25)
+      );
+    }
+  }
+}

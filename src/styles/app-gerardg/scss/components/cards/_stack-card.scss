@@ -1,0 +1,44 @@
+.appgerardg-stack-card {
+  &__container {
+    // border: solid red 0.5rem !important;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 15rem !important;
+    height: 15rem !important;
+    @include flexColumnCenter;
+    @include appgerardg-polygon-top-right-cut;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem !important;
+    padding: 2rem 1rem !important;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: scale(1.05);
+      transition: 0.2s;
+    }
+
+    &--level {
+      // border: solid blue 0.1rem !important;
+      background-color: rgba(255, 255, 255, 0.25);
+      width: 100% !important;
+      height: 0.25rem !important;
+      margin-top: 1.5rem !important;
+      padding: 0 !important;
+      @include flexRowCenterLeft;
+    }
+  }
+  &__img {
+    // border: solid yellow 0.1rem !important;
+    width: 5rem !important;
+    height: 5rem !important;
+    object-fit: contain;
+  }
+  &__text {
+    margin-top: 1rem !important;
+
+    &--level {
+      margin-top: 0.3rem !important;
+      font-size: 1.1rem !important;
+    }
+  }
+}

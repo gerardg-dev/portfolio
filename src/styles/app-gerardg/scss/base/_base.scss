@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: inherit !important;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5% !important; // 1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond(phone) {
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50% !important; // 1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25% !important; // 1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75% !important; // 1rem = 12, 12/16
+  }
+}
+
+body {
+  box-sizing: border-box !important;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+  color: $appgerardg-color-gray-dark !important;
+
+  @include respond(tab-port) {
+    // padding: 0rem !important;
+  }
+}
+
+// TEXT SELECTION COLOR --------------------------------------------------------
+
+* {
+  &::selection {
+    // background-color: #white !important;
+    // color: $appgerardg-color-black !important;
+  }
+}
+
+// SCROLLBAR -------------------------------------------------------------------
+
+div {
+  &::-webkit-scrollbar {
+    width: 0rem !important;
+    height: 0rem !important;
+    border-radius: 2rem !important;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #888;
+    width: 90%;
+    height: 90%;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: lightGreen;
+    width: 90%;
+    height: 90%;
+  }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    // background: #555;
+    background: lightBlue;
+  }
+}

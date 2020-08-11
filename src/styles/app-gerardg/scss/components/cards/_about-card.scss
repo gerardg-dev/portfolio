@@ -1,0 +1,55 @@
+.appgerardg-about-card {
+  @mixin appgerardg-about-card-width {
+    width: 100%;
+    min-width: 20rem !important;
+    max-width: 50rem !important;
+  }
+
+  &__container {
+    // border: solid purple 0.25rem !important;
+    text-align: center;
+    @include appgerardg-about-card-width;
+    @include flexColumnCenter;
+
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem !important;
+    &:not(:last-child) {
+      // margin-right: 2rem !important;
+    }
+
+    &--poly {
+      // border: solid red 2px;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include appgerardg-about-card-width;
+      height: 3rem !important;
+      @include appgerardg-polygon-top-right-cut-2;
+    }
+    &--content {
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 2rem 2rem !important;
+      padding-top: 1rem !important;
+      position: relative;
+      @include flexColumnCenter;
+    }
+    &--vertical-line {
+      // border: solid red 0.2rem !important;
+      background-color: rgba(255, 255, 255, 0.05);
+      position: absolute;
+      height: 95%;
+      width: 0.5rem !important;
+      top: 0;
+      left: 0;
+      margin-left: 0.5rem !important;
+    }
+  }
+
+  &__text {
+    &--title {
+      margin-top: 1rem !important;
+    }
+    &--p {
+      margin-top: 2rem !important;
+    }
+  }
+}

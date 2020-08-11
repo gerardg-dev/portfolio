@@ -1,0 +1,94 @@
+.appgerardg-contact-card {
+  @mixin appgerardg-contact-card-width {
+    width: 100%;
+    min-width: 20rem !important;
+    max-width: 60rem !important;
+  }
+
+  &__container {
+    // border: solid blue 0.25rem !important;
+    text-align: center;
+    @include appgerardg-contact-card-width;
+    @include flexColumnCenter;
+
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem !important;
+    &:not(:last-child) {
+      // margin-right: 2rem !important;
+    }
+
+    &--top-poly {
+      // border: solid red 2px;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include appgerardg-contact-card-width;
+      height: 3rem !important;
+      @include appgerardg-polygon-top-right-cut-2;
+    }
+    &--bottom-poly {
+      // border: solid red 2px;
+      background-color: rgba(0, 0, 0, 0.5);
+      @include appgerardg-contact-card-width;
+      height: 3rem !important;
+      @include appgerardg-polygon-bottom-left-cut-1;
+    }
+
+    &--content {
+      // border: solid yellow 0.2rem !important;
+      background-color: rgba(0, 0, 0, 0.25);
+      padding: 2rem 8rem !important;
+      // padding-top: 1rem !important;
+      position: relative;
+      @include flexColumnCenterLeft;
+
+      @include respond(phone) {
+        padding: 1rem 5rem !important;
+      }
+    }
+
+    &--vertical-line {
+      // border: solid red 0.2rem !important;
+      background-color: rgba(lightblue, 1.75);
+      position: absolute;
+      height: 95%;
+      width: 1rem !important;
+      top: 0;
+      left: 0;
+      margin-left: 2.5rem !important;
+    }
+
+    &--social-info {
+      // border: solid yellow 0.2rem !important;
+      margin-top: 1rem !important;
+      @include flexRowCenterLeft;
+      text-align: center;
+      text-decoration: none !important;
+      &:not(:last-child) {
+        margin-bottom: 2rem !important;
+      }
+      &:hover {
+        // background-color: rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+    }
+  }
+
+  &__img {
+    // border: solid red 0.1rem !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    object-fit: contain;
+  }
+
+  &__text {
+    margin-left: 1rem !important;
+
+    &--title {
+      margin-top: 1rem !important;
+    }
+    &--p {
+      margin-top: 2rem !important;
+    }
+  }
+}

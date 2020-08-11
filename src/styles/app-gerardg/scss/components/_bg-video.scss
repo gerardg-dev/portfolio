@@ -1,0 +1,17 @@
+.appgerardg-bg-video {
+  // border: solid blue 5px;
+  position: absolute;
+  top: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  z-index: -1;
+  opacity: 1;
+  overflow: hidden;
+
+  &__content {
+    // border: solid red 5px;
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+}

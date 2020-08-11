@@ -1,0 +1,98 @@
+$appgerardg-modal-close-button-height: 6rem;
+
+.appgerardg-modal {
+  &__container {
+    // border: solid red 0.25rem !important;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: 1000;
+
+    animation: fadeIn 0.15s ease-out 0.25s;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+
+    &--blurred-bg {
+      // border: solid yellow 0.25rem !important;
+      width: 100%;
+      height: 100%;
+      padding: 0 !important;
+      z-index: 1001;
+
+      &:after {
+        // border: solid lightgreen 0.25rem !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        content: "";
+        background: inherit;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1001;
+
+        margin: 2rem !important; // 2REM-IMPORTANT
+        margin-bottom: $appgerardg-modal-close-button-height !important;
+
+        // @include appgerardg-blur-2;
+      }
+    }
+
+    &--content {
+      // border: solid orange 0.25rem !important;
+      width: 100%;
+      height: 100%;
+      position: relative !important;
+      z-index: 1002;
+
+      // overflow-y: scroll;
+      // Uncomment line above, and add content to this div
+      // instead to &--content-2 if you want to fully scroll up n down
+      // ignoring the paddings margins
+
+      padding: 2rem !important; // 2REM-IMPORTANT
+      padding-bottom: $appgerardg-modal-close-button-height !important;
+    }
+
+    &--content-2 {
+      // border: solid lightblue 0.3rem !important;
+      border: solid rgba(white, 0.1) 1rem !important;
+      border-bottom: solid white 0rem !important;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+
+      @include appgerardg-moz-hide-scrollbar;
+    }
+  }
+
+  &__button {
+    &--close {
+      // border: solid yellow 0.25rem !important;
+      width: 100%;
+      height: $appgerardg-modal-close-button-height !important;
+      padding: 1rem !important;
+      background-color: rgba(red, 0.85);
+      @include flexColumnCenter;
+      border: none;
+      position: absolute;
+      z-index: 1002;
+      @include absBottomCenter;
+
+      &:hover {
+        background-color: darken(red, 25);
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  &__text {
+    &--close {
+      text-align: center;
+    }
+  }
+}

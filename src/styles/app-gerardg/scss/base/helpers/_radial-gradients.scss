@@ -1,0 +1,21 @@
+@mixin radial-gradient-dark {
+  background-image: radial-gradient(
+    circle,
+    #373b46,
+    #333742,
+    #2f333d,
+    #2c2f39,
+    #282b35,
+    #242730,
+    #21232b,
+    #1d1f26,
+    #181a1f,
+    #141519,
+    #0d0f12,
+    #050609
+  );
+}
+
+.radial-gradient-dark {
+  @include radial-gradient-dark;
+}

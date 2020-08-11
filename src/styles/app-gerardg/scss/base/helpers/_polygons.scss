@@ -1,0 +1,60 @@
+@mixin appgerardg-polygon-top-right-cut {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 3rem) 0,
+    100% calc(100% - 12rem),
+    100% 100%,
+    0 100%
+  ) !important;
+}
+
+.appgerardg-polygon-top-right-cut {
+  @include appgerardg-polygon-top-right-cut;
+}
+
+//
+
+@mixin appgerardg-polygon-top-right-cut-2 {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 3rem) 0,
+    100% 100%,
+    100% 100%,
+    0 100%
+  ) !important;
+}
+
+.appgerardg-polygon-top-right-cut-2 {
+  @include appgerardg-polygon-top-right-cut-2;
+}
+
+//
+
+@mixin appgerardg-polygon-bottom-left-cut-1 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 3rem 100%) !important;
+}
+
+.appgerardg-polygon-bottom-left-cut-1 {
+  @include appgerardg-polygon-bottom-left-cut-1;
+}
+
+//
+
+@mixin appgerardg-bottom-polygon-clip {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 6rem),
+    calc(100% - 2rem) calc(100% - 4rem),
+    calc(100% - 6rem) calc(100% - 4rem),
+    calc(100% - 10rem) 100%,
+    10rem 100%,
+    6rem calc(100% - 4rem),
+    2rem calc(100% - 4rem),
+    0 calc(100% - 6rem)
+  ) !important;
+}
+
+.appgerardg-bottom-polygon-clip {
+  @include appgerardg-bottom-polygon-clip;
+}

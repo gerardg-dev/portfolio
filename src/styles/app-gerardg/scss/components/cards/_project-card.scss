@@ -1,0 +1,45 @@
+.appgerardg-project-card {
+  &__container {
+    // border: solid white 0.25rem !important;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 4rem 2rem !important;
+    min-width: 25rem !important;
+    max-width: 25rem !important;
+    min-height: 15rem !important;
+    max-height: 15rem !important;
+
+    text-align: center;
+    @include flexColumnCenter;
+    @include appgerardg-polygon-top-right-cut;
+
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem !important;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: scale(1.05);
+      transition: all 0.2s;
+    }
+  }
+
+  &__img {
+    // border: solid red 0.1rem !important;
+    width: 10rem !important;
+    height: 5rem !important;
+    object-fit: contain;
+  }
+
+  &__text {
+    &--title {
+      // border: solid blue 0.1rem !important;
+      margin-top: 1rem !important;
+    }
+  }
+
+  &__button {
+    // border: solid green 0.1rem !important;
+    text-align: center;
+    border: none;
+  }
+}

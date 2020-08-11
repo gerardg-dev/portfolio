@@ -1,0 +1,112 @@
+// COLORS ----------------------------------------------------------------------
+
+$appgerardg-color-primary: orange;
+$appgerardg-color-primary-light: lighten($appgerardg-color-primary, 10%);
+$appgerardg-color-primary-dark: darken($appgerardg-color-primary, 10%);
+
+$appgerardg-color-secondary: red;
+$appgerardg-color-secondary-light: lighten($appgerardg-color-secondary, 10%);
+$appgerardg-color-secondary-dark: darken($appgerardg-color-secondary, 10%);
+
+$appgerardg-color-tertiary: purple;
+$appgerardg-color-tertiary-light: lighten($appgerardg-color-tertiary, 10%);
+$appgerardg-color-tertiary-dark: darken($appgerardg-color-tertiary, 10%);
+
+$appgerardg-color-quaternary: blue;
+$appgerardg-color-quaternary-light: lighten($appgerardg-color-quaternary, 10%);
+$appgerardg-color-quaternary-dark: darken($appgerardg-color-quaternary, 10%);
+
+$appgerardg-color-quinary: green;
+$appgerardg-color-quinary-light: lighten($appgerardg-color-quinary, 10%);
+$appgerardg-color-quinary-dark: darken($appgerardg-color-quinary, 10%);
+
+$appgerardg-color-senary: yellow;
+$appgerardg-color-senary-light: lighten($appgerardg-color-senary, 10%);
+$appgerardg-color-senary-dark: darken($appgerardg-color-senary, 10%);
+
+$appgerardg-color-septenary: pink;
+$appgerardg-color-septenary-light: lighten($appgerardg-color-septenary, 10%);
+$appgerardg-color-septenary-dark: darken($appgerardg-color-septenary, 10%);
+
+$appgerardg-color-octonary: brown;
+$appgerardg-color-octonary-light: lighten($appgerardg-color-octonary, 10%);
+$appgerardg-color-octonary-dark: darken($appgerardg-color-octonary, 10%);
+
+$appgerardg-color-nonary: lightgreen;
+$appgerardg-color-nonary-light: lighten($appgerardg-color-nonary, 10%);
+$appgerardg-color-nonary-dark: darken($appgerardg-color-nonary, 10%);
+
+$appgerardg-color-denary: lightblue;
+$appgerardg-color-denary-light: lighten($appgerardg-color-denary, 10%);
+$appgerardg-color-denary-dark: darken($appgerardg-color-denary, 10%);
+
+// B&Ws
+
+$appgerardg-color-black: black;
+$appgerardg-color-black-light: lighten($appgerardg-color-black, 10%);
+$appgerardg-color-black-dark: darken($appgerardg-color-black, 10%);
+
+$appgerardg-color-white: white;
+$appgerardg-color-white-light: lighten($appgerardg-color-white, 10%);
+$appgerardg-color-white-dark: darken($appgerardg-color-white, 10%);
+
+$appgerardg-color-gray: rgba(131, 147, 163, 1); // #8393a3
+$appgerardg-color-gray-light: lighten($appgerardg-color-gray, 10%);
+$appgerardg-color-gray-dark: darken($appgerardg-color-gray, 10%);
+
+// CUSTOM
+
+$appgerardg-color-orange-1: #f49c6c;
+$appgerardg-color-orange-1-light: lighten($appgerardg-color-orange-1, 10%);
+$appgerardg-color-orange-1-dark: darken($appgerardg-color-orange-1, 10%);
+
+$appgerardg-color-orange-2: rgba(239, 91, 36, 1); // #ef5b24
+$appgerardg-color-orange-2-light: lighten($appgerardg-color-orange-2, 10%);
+$appgerardg-color-orange-2-dark: darken($appgerardg-color-orange-2, 10%);
+
+$appgerardg-color-gray-1: rgba(131, 147, 163, 1); // #8393a3
+$appgerardg-color-gray-1-light: lighten($appgerardg-color-gray-1, 10%);
+$appgerardg-color-gray-1-dark: darken($appgerardg-color-gray-1, 10%);
+
+$appgerardg-color-gray-2: #888;
+$appgerardg-color-gray-2-light: lighten($appgerardg-color-gray-2, 10%);
+$appgerardg-color-gray-2-dark: darken($appgerardg-color-gray-2, 10%);
+
+// FONT COLORS -----------------------------------------------------------------
+
+$appgerardg-default-font-color: $appgerardg-color-white;
+
+$appgerardg-h1-font-color: $appgerardg-default-font-color;
+$appgerardg-h2-font-color: $appgerardg-default-font-color;
+$appgerardg-h3-font-color: $appgerardg-default-font-color;
+$appgerardg-h4-font-color: $appgerardg-default-font-color;
+$appgerardg-h5-font-color: $appgerardg-default-font-color;
+$appgerardg-h6-font-color: $appgerardg-default-font-color;
+$appgerardg-p-font-color: $appgerardg-default-font-color;
+
+// FONT SIZES ------------------------------------------------------------------
+// Point Types: 16, 18, 20, 24, 30, 36, 42, 48, 60, 72.
+
+$appgerardg-h1-font-size: 4.2rem;
+$appgerardg-h2-font-size: 3.6rem;
+$appgerardg-h3-font-size: 3rem;
+$appgerardg-h4-font-size: 2.4rem;
+$appgerardg-h5-font-size: 2rem;
+$appgerardg-h6-font-size: 1.8rem;
+$appgerardg-p-font-size: 1.6rem;
+
+$appgerardg-default-font-size: $appgerardg-p-font-size;
+
+// GRID ------------------------------------------------------------------------
+
+$appgerardg-grid-width: 114rem;
+$appgerardg-gutter-vertical: 8rem;
+$appgerardg-gutter-vertical-small: 6rem;
+$appgerardg-gutter-horizontal: 6rem;
+
+// Z-INDEXES -------------------------------------------------------------------
+
+$appgerardg-stack-modal: 1000;
+$appgerardg-project-modal: 1000;
+$appgerardg-image-modal: 2000;
+$appgerardg-video-modal: 2000;

@@ -1,0 +1,67 @@
+.appgerardg-user-card {
+  &__container {
+    // border: solid pink 3px;
+
+    animation: appgerardg-fadezoom-in-out 1.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+    backface-visibility: hidden;
+
+    &--blurred {
+      border: solid rgba(255, 255, 255, 0.1) 0.5rem !important;
+      border-bottom: solid rgba(255, 255, 255, 0.1) 2rem !important;
+      background-color: white;
+      position: relative;
+      width: 30rem !important;
+      height: 35rem !important;
+      padding: 4rem 2rem !important;
+      background: inherit;
+      border-radius: 2px;
+      overflow: hidden;
+
+      @include flexColumnCenter;
+
+      &:after {
+        // border: solid darkred 0.5rem !important;
+        content: "";
+        width: 30rem !important;
+        height: 35rem !important;
+        background: inherit;
+        position: absolute;
+        @include appgerardg-blur-1;
+      }
+    }
+    &--content {
+      // border: solid blue 0.5rem !important;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      z-index: 1;
+      @include flexColumnCenter;
+    }
+    &--content > * {
+      // border: solid lightblue 0.5rem !important;
+      display: inline-block;
+      width: 200px;
+    }
+    &--text {
+      margin-top: 1rem !important;
+      width: 100%;
+      color: white;
+      @include flexColumnCenter;
+    }
+  }
+  &__img {
+    // border: solid yellow 0.5rem !important;
+    width: 10rem !important;
+    height: 10rem !important;
+    position: relative;
+    border-radius: 50%;
+    background-size: contain;
+  }
+  &__text {
+    &--name {
+    }
+    &--title {
+    }
+  }
+}
